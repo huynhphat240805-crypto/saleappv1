@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 15 Pro Max",
+    "description": "Điện thoại cao cấp của Apple, chip A17 Pro, camera 48MP.",
+    "price": 29990000,
+    "image": "iphone15promax.jpg",
+    "categoryId": 1
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S24 Ultra",
+    "description": "Flagship Samsung, bút S Pen, camera zoom 100x.",
+    "price": 26990000,
+    "image": "galaxys24ultra.jpg",
+    "categoryId": 1
+  },
+  {
+    "id": 3,
+    "name": "Xiaomi 14",
+    "description": "Điện thoại hiệu năng cao, camera Leica, giá tốt.",
+    "price": 15990000,
+    "image": "xiaomi14.jpg",
+    "categoryId": 1
+  },
+  {
+    "id": 4,
+    "name": "iPad Pro M4",
+    "description": "Máy tính bảng mạnh mẽ với chip M4, màn hình Liquid Retina XDR.",
+    "price": 24990000,
+    "image": "ipadprom4.jpg",
+    "categoryId": 2
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Tab S9",
+    "description": "Máy tính bảng Android cao cấp, màn hình AMOLED, kèm bút S Pen.",
+    "price": 17990000,
+    "image": "galaxytabs9.jpg",
+    "categoryId": 2
+  }
+]

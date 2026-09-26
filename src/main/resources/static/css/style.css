@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 15px;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.filter-form input,
+.filter-form select,
+.filter-form button {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.filter-form button {
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-form button:hover {
+    background-color: #1a252f;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+}
+
+.product-card a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.product-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    background: #eee;
+}
+
+.product-card h3,
+.product-card p {
+    padding: 0 12px;
+}
+
+.product-card h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.product-card p {
+    font-size: 13px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.product-card .price {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.product-detail img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    background: #eee;
+    border-radius: 8px;
+}
+
+.product-detail .info h2 {
+    margin-bottom: 10px;
+}
+
+.product-detail .info p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.product-detail .price {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 20px;
+}

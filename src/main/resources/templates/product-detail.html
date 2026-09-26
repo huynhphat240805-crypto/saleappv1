@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${product != null} ? ${product.name} : 'Không tìm thấy sản phẩm'"></title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <header class="header">
+        <h1>BÁN HÀNG TRỰC TUYẾN</h1>
+        <nav>
+            <a th:href="@{/products}">← Quay lại danh sách</a>
+        </nav>
+    </header>
+
+    <main class="container" th:if="${product != null}">
+        <div class="product-detail">
+            <img th:src="@{'/images/' + ${product.image}}" alt="product image" />
+            <div class="info">
+                <h2 th:text="${product.name}"></h2>
+                <p th:text="${product.description}"></p>
+                <p class="price" th:text="${#numbers.formatDecimal(product.price, 0, 'COMMA', 0, 'POINT')} + ' đ'"></p>
+                <p>Danh mục ID: <span th:text="${product.categoryId}"></span></p>
+            </div>
+        </div>
+    </main>
+
+    <main class="container" th:if="${product == null}">
+        <p>Không tìm thấy sản phẩm.</p>
+    </main>
+</body>
+</html>
