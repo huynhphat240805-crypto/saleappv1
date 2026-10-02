@@ -1,31 +1,20 @@
 package com.example.saleappv1.model;
 
-public class Category {
+import java.util.List;
+import jakarta.persistence.*;
+import lombok.*;
 
-    private int id;
+@Entity
+@Table(name = "categories")
+@Getter @Setter
+@NoArgsConstructor @AllArgsConstructor
+public class Category {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
     private String name;
 
-    public Category() {
-    }
-
-    public Category(int id, String name) {
-        this.id = id;
-        this.name = name;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    @OneToMany(mappedBy = "category")
+    private List<Product> products;
 }

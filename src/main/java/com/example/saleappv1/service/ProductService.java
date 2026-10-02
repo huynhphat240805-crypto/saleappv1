@@ -63,7 +63,8 @@ public class ProductService {
         List<Product> result = new ArrayList<>(products);
 
         if (categoryId != null) {
-            result.removeIf(p -> p.getCategoryId() != categoryId);
+        	result.removeIf(p -> p.getCategory() == null
+        	        || !p.getCategory().getId().equals(Long.valueOf(categoryId)));
         }
 
         if (keyword != null && !keyword.isBlank()) {

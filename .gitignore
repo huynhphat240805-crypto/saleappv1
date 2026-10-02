@@ -1,8 +1,7 @@
 target/
-.idea/
-*.iml
+bin/
+.apt_generated/
+.apt_generated_tests/
 .classpath
 .project
 .settings/
-.mvn/
-!.mvn/wrapper/maven-wrapper.jar
